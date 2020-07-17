@@ -1,5 +1,5 @@
 ---
-title: "Pianoteq 6 STAGE in a Raspberry Pi"
+title: "Pianoteq in a Raspberry Pi (headless)"
 date: 2017-07-17
 ---
 My Yamaha DXG660 digital piano has a great set of features for a very reasonable price.
