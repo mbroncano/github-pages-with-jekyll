@@ -21,7 +21,7 @@ In this document I describ the steps that I followed in order to have everything
 ### Preparing the SD Card
 In this step we will install a minimal operating system to run our software.
 
-* Install **Raspberry Pi Imager** from https://www.raspberrypi.org/downloads/
+* Install [Raspberry Pi Imager](https://www.raspberrypi.org/downloads/) 
 * Click on **Choose OS** and from the **Raspberry Pi OS (Other)** section, select **Raspberry Pi OS Lite (32-bit)**
 * Select you SD Card and finally click on **Write**. It shouldn't take more than a few minutes.
 * We should have a new partition called `boot` (remove and reinsert the SD card if not)
