@@ -1,4 +1,4 @@
-theme: jekyll-theme-midnight
+theme: jekyll-theme-minimal
 include: _posts
 title: Hacklog
 author: Manuel Broncano
