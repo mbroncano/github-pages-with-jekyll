@@ -1,3 +1,7 @@
+---
+title: "Pianoteq 6 STAGE in a Raspberry Pi"
+date: 2017-07-17
+---
 # Installing Pianoteq 6 STAGE in a Raspberry Pi 4B
 My Yamaha DXG660 digital piano has a great set of features and a very reasonable price.
 The sound synthesizer is quite basic though, so after buying a [Pianoteq Stage](https://www.modartt.com/pianoteq) 
