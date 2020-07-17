@@ -1,6 +1,6 @@
 ---
 title: "Pianoteq in a Raspberry Pi (headless)"
-date: 2017-07-17
+date: 2020-07-17
 ---
 My Yamaha DXG660 digital piano has a great set of features for a very reasonable price.
 The sound synthesizer is quite basic though, so after buying a [Pianoteq Stage](https://www.modartt.com/pianoteq) 
