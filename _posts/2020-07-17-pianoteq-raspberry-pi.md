@@ -34,6 +34,7 @@ keyboard.
 * We will create two new files in the **boot** partition root directory: `ssh` and `wpa_supplicant.conf`
 * The `ssh` file can contain anything or just be empty, if you have a UNIX terminal, you can simple type `touch ssh` in the `/boot` directory.
 * The `wpa_supplicant.conf` file must contain the following:
+
 ```country=<you two-letter country code e.g. US>
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
@@ -62,6 +63,7 @@ With this service, Piano will run as soon as we boot up the device.
 
 * Create a new system service: `sudo systemctl --full --force edit pianoteq.service`
 * Copy and paste the following in the new file:
+
 ```
 [Unit]
 Description=Pianoteq
@@ -84,6 +86,7 @@ WantedBy=multi-user.target
 In order to avoid pops and clicks, we will force the first CPU to run always at maximum speed
 * Create a new system service: `sudo systemctl --full --force edit governor@.service`
 * Copy and paste the following in the new file:
+
 ```
 [Unit]
 Description=Set CPU0 governor to %i
@@ -107,6 +110,7 @@ We will create a `udev` rule to shutdown the Pi when we power off the keyboard. 
 * In our case is `ID 0499:161d Yamaha`
 * Create a new set of rules: `sudo nano /lib/udev/rules.d/80-pianoteq.rules`
 * Copy and paste the lines below:
+
 ```
 ACTION=="add", SUBSYSTEM=="usb", ENV{ID_VENDOR_ID}=="0499", ENV{ID_MODEL_ID}=="161d", RUN+="/bin/systemctl start pianoteq"
 ACTION=="remove", SUBSYSTEM=="sound", ENV{ID_VENDOR_ID}=="0499", ENV{ID_MODEL_ID}=="161d", RUN+="/sbin/poweroff"
