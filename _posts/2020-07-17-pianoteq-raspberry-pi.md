@@ -35,10 +35,10 @@ keyboard.
 * The `ssh` file can contain anything or just be empty, if you have a UNIX terminal, you can simple type `touch ssh` in the `/boot` directory.
 * The `wpa_supplicant.conf` file must contain the following:
 
-```country=<you two-letter country code e.g. US>
+```
+country="<you two-letter country code>"
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
-
 network={
 scan_ssid=1
 ssid="<your access point SSID>"
